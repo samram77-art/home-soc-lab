@@ -1,1 +1,32 @@
 
+# VirtualBox Setup
+
+## Virtual Machines
+
+### Windows 10 VM
+Suggested resources:
+- 2 CPU cores
+- 4 GB RAM
+- 50 GB disk
+
+### Ubuntu Server VM
+Suggested resources:
+- 2 CPU cores
+- 4 GB RAM
+- 40 GB disk
+
+## Network
+
+Use either:
+- NAT for quick internet-enabled setup
+- Internal Network or Host-Only Adapter for more isolated lab testing
+
+For a beginner lab, NAT is acceptable if you only need package installation and local monitoring.
+
+## Preparation Steps
+
+1. Install VirtualBox
+2. Create the Windows 10 VM
+3. Create the Ubuntu Server VM
+4. Ensure both systems can communicate over the selected virtual network
+5. Record VM IP addresses for documentation
