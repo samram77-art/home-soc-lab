@@ -1,1 +1,43 @@
 
+# Lab Overview
+
+## Objective
+
+The objective of this lab is to simulate a small SOC workflow by collecting Windows endpoint logs and reviewing them in a centralized platform.
+
+## Components
+
+### Windows 10 VM
+Acts as the monitored endpoint. This machine generates Windows Security events and Sysmon telemetry.
+
+### Ubuntu Server VM
+Hosts the Wazuh Manager and dashboard for centralized log collection and analysis.
+
+## Data Flow
+
+Windows 10 Endpoint -> Wazuh Agent -> Wazuh Manager -> Dashboard / Alerts
+
+## Why This Design
+
+This design is intentionally small so it is easy to build, understand, and explain in interviews. It focuses on core SOC concepts:
+
+- Endpoint telemetry
+- Centralized monitoring
+- Alert review
+- Basic incident investigation
+
+## Detection Coverage
+
+Current detections focus on:
+- Failed authentication
+- Suspicious process execution
+- User account changes
+
+## Future Improvements
+
+Possible future improvements include:
+- Adding a second endpoint
+- Adding Sysmon tuning
+- Building custom Wazuh rules
+- Adding Sigma-to-Wazuh mapping
+- Adding Active Directory
